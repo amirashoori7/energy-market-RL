@@ -6,7 +6,7 @@ ing group and consider this scenario as partially observable Markov Games. Then 
 
 
 ## RL Basics
-![alt text](https://raw.githubusercontent.com/amirashoori7/energy-market-RL.git/fig/RL in EM.jpg)
+![alt text](https://raw.githubusercontent.com/amirashoori7/energy-market-RL/fig/RL in EM.jpg)
 
 The theory of RL is founded on two important principles: Bellman's equation and the theory of stochastic approximation.
 
