@@ -6,10 +6,13 @@ ing group and consider this scenario as partially observable Markov Games. Then 
 
 
 ## RL Basics
+
+![alt text](https://github.com/amirashoori7/energy-market-RL/raw/main/fig/RL%20in%20EM.jpg "RL in Electricity Market")
+
 The theory of RL is founded on two important principles: Bellman's equation and the theory of stochastic approximation.
 
 Any RL model contains 4 basic elements:
-1- System Environment (Simulation Model)
-2- Learning Agent(s) (market participants)
-3- Set of Actions for each Agent (Action Spaces)
-4- System Response (participant Rewards)
+1. System Environment (Simulation Model)
+2. Learning Agent(s) (market participants)
+3. Set of Actions for each Agent (Action Spaces)
+4. System Response (participant Rewards)
