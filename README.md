@@ -66,14 +66,30 @@ B. Deep Neural Networks
 
 ## PROPOSED METHOD
 In this research we propose the use of Deep Reinforcement Learning (DRL) as an on-line method to perform optimal building resource allocation at different levels of aggregation.
-The general architecture of our proposed method is depicted in the followiing Fig. 
+The general architecture of our proposed method is depicted in the following Fig:
 
-![alt text](https://github.com/amirashoori7/energy-market-RL/blob/69454a57c2a05e3632893dfc09bcdae3138fbf31/fig/Energy%20Market%20DRL%20Arch.jpg)
+![alt text](https://github.com/amirashoori7/energy-market-RL/blob/b1f4c221e3fbe3467144cc3facabc0955970d5f1/fig/drl-arch.jpg)
 
 DRL (RL combined with DNNs of k hidden layers) can learn to act better than the standard RL by automatically extracting patterns, such as those of electricity consumption.
-Overall, we can represent the DNN method, from a very general perspective, as a black box model with good generalization capabilities over a given input distribution as follows:
+
+### Learning in DRL is done as follows: 
+The DNN is trained with a variant of the Q-learning algorithm, using stochastic gradient descent to update its parameters. 
+Firstly, the value-function from the standard RL algorithm is replaced by a deep Q-network with parameters θ, given by the weights and biases of DNN, such that Q(s, a, θ) ≈ Q π (s, a). 
+This approximation is used further to define the objective function by mean-squared error in Q-values
+
 
 ## Implementation Milestones
+To train the DQN and DPG models as a starting point an off-line database: 
+1- we should build the environment game
+2- for the assumed flexible loads, possibilities should be considered and evaluated
+(We gave a positive reward if estimation was close to our optimization goal. If not, we assigned to that possibility a negative reward.) 
+At the begin of the learning there are a lot of random choices, but in time (many iterations), the reinforcement learning model converges and will learn to choose just the possibilities which are close to the optimization goal. 
+3- for DQN we must define possible actions on flexible devices, like switching off air conditioner, washing machines and so on
+4- setting hyper-parameters of all experiments like learning rate α = 10 −2 , the discount factor to γ = 0.99, and η = 0.01
+5- then we must train our models for x episodes where an episode is composed by y random chosen days. 
+Also weights should be updated, for example after every 2 episodes
+6- Reward function should be computed at the 
+Finally, we obtain an alternative optimized version of the starting off-line database, which would be better if this strategy would have been used in reality.
 
 
 The theory of RL is founded on two important principles: Bellman's equation and the theory of stochastic approximation.
