@@ -1,4 +1,4 @@
-# energy-market-machine-learning
+### energy-market-machine-learning
 A researche study on the problem of Energy Market's Demand Side Management (DSM) using Reinforcement Learning techniques.
 
 ## Goals
