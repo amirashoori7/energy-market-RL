@@ -1,8 +1,45 @@
 # energy-market-machine-learning
 A researche study on the problem of Energy Market's Demand Side Management (DSM) using Reinforcement Learning techniques.
 
-Here we research on the user-friendly DSM techniques for a smart home community. We first entice the community with an incentive mechanism to form a trad-
-ing group and consider this scenario as partially observable Markov Games. Then we propose a ?????????????????? framework to address the large-scale energy cost optimization problem.
+## Goals
+Here we try to to optimize building energy consumption by understanding individual consumption behaviors based on the extensive data collected from the Advanced Metering Infrastructure (AMI).
+
+This work is motivated by the hypothesis that an optimal resource allocation of end-user patterns based on daily smart electrical device profiles could be used to smoothly reconcile differences in future energy consumption patterns and the supply of variable sources such as wind and solar. 
+It is expected that a cost minimization problem could be solved to activate real-time price responsive behavior
+
+## Approach
+Our objectives can be done by performing successive transformation of the historical data to learn powerful machine learning models to cope with the high uncertainty of the electrical patterns. Moreover, these models will be capable of generalization and they could be exploited in an on-line manner (i.e. few milliseconds) to minimize the cost or the energy consumption in newly encountered situations.
+
+The building environment is modeled using a Markov Decision Process and it can be used to find the best long-term strategies. 
+
+Prior studies showed that RL methods are able to solve stochastic optimal control problems in the power system area as well as an energy consumption scheduling problem with dynamic pricing. For instance, A batch reinforcement learning method was introduced to schedule a cluster of domestic electric water heaters, and further on applied for smart home energy management
+
+In this research, we propose the use of the Deep Policy Gradient method, as part of Deep Reinforcement Learning algorithms, in the large-scale physical
+context of smart grid - smart building, as following:
+• We propose for an approach to optimize directly on-line the building energy consumption and the cost.
+• We propose a new way to adapt DRL algorithms to the smart grid context, with the aim of conceiving a fast algorithm to learn the electrical patterns and to optimize on-line either the building energy consumption or the cost.
+• We investigate two DRL algorithms, namely Deep Q-learning (DQN) and Deep Policy Gradient (DPG).
+• DPG in its current state-of-the-art form is capable to take just one action at a specific time. As in the building
+context multiple actions have to be taken at the same moment, we propose a novel gradient method to enhance DPG with the capability of handling multiple actions simultaneously.
+
+We evaluate our proposed methods on the PecanStreet database at both the building and aggregated level. In the end, we prove that our proposed methods are able to efficiently cope with the inherent uncertainty and variability in the generation of energy. 
+
+## Problem Formulation
+In this context, we aim to reduce load peaks as well as to minimize the cost of energy. 
+
+Let B denote the set of buildings, such that B i ∈ B, ∀i ∈ N representing the index of the building analyzed. 
+The total building energy consumption E i is a sum over all power generation P + and consumption in a specific interval of time ∆t. 
+Therein, based on the shifting capabilities of appliances present in a building we differentiate between flexible power P d − , 
+e.g. electric devices d ∈ {1, .., m i }, and fixed consumption P − .
+
+a) Cost minimization problem: In this paper, we assume two price components over the space of B, such that λ −t is the price value set by the utility company for the time-slot t and λ +t represents the price value at which the utility company buys energy from end-users at time-slot t. 
+Therefore, the optimal cost associated with customer i at time t for an optimization time horizon T can be calculated as:
+![alt text](https://github.com/amirashoori7/energy-market-RL/raw/main/fig/ "Optimal Cost")
+where a i,d,t = 1 if the electrical device is on at that specific moment in time, and 0 otherwise. 
+Please note that, in our proposed method, computing a i,d,t is equivalent with the estimation of the actions (see Fig.1).
+
+b) Peak reduction problem: In the special case of constant price, for electricity generation and consumption, with λ+t = λ-t , the cost minimization problem becomes a peak reduction problem, defined as
+![alt text](https://github.com/amirashoori7/energy-market-RL/raw/main/fig/ "Cost Minimization")
 
 
 ## RL Basics
