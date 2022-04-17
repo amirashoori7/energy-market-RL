@@ -1,7 +1,7 @@
 ## energy-market-machine-learning
 A researche study on the problem of Energy Market's Demand Side Management (DSM) using Reinforcement Learning techniques.
 
-## Goals
+### Goals
 Here we try to to optimize building energy consumption by understanding individual consumption behaviors based on the extensive data collected from the Advanced Metering Infrastructure (AMI).
 
 This work is motivated by the hypothesis that an optimal resource allocation of end-user patterns based on daily smart electrical device profiles could be used to smoothly reconcile differences in future energy consumption patterns and the supply of variable sources such as wind and solar. 
