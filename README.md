@@ -53,6 +53,21 @@ MDPs are defined by a 4-tuple
 
 ![alt text](https://github.com/amirashoori7/energy-market-RL/blob/8fca5c2360c83735a3c3e7944a323eb6f8ca00cb/fig/MDP.jpg)
 
+Under structure of finite states and actions of the environment, the Markov decision problem is typically solved using dynamic programing. 
+However, in our built environment, the model has a large (continuous) states space. Therein, the state space is given by the building energy consumption and price at every moment in time, while the action space is highly dependent on the electric device constrains. 
+The success of every action a is measured by a reward r. Learning to act in an environment will make the agent to choose actions to maximize future rewards. 
+The value function Q π (s, a) is an expected total reward in state s using action a under a policy π. 
+Q-learning is one of the most popular reinforcement learning algorithms. 
+
+B. Deep Neural Networks
+......................................................
+......................................................
+......................................................
+
+
+## Implementation Milestones
+
+
 The theory of RL is founded on two important principles: Bellman's equation and the theory of stochastic approximation.
 
 Any RL model contains 4 basic elements:
