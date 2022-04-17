@@ -35,14 +35,14 @@ e.g. electric devices d ∈ {1, .., m i }, and fixed consumption P − .
 a) Cost minimization problem: In this paper, we assume two price components over the space of B, such that λ −t is the price value set by the utility company for the time-slot t and λ +t represents the price value at which the utility company buys energy from end-users at time-slot t. 
 Therefore, the optimal cost associated with customer i at time t for an optimization time horizon T can be calculated as:
 
-![alt text](https://github.com/amirashoori7/energy-market-RL/blob/df27ee8752bdb8909e87d5a35fdf0ca149386486/fig/Cost%20Min.jpg)
+![alt text](https://github.com/amirashoori7/energy-market-RL/blob/8fca5c2360c83735a3c3e7944a323eb6f8ca00cb/fig/Optimal%20Cost.jpg)
 
 where a i,d,t = 1 if the electrical device is on at that specific moment in time, and 0 otherwise. 
 Please note that, in our proposed method, computing a i,d,t is equivalent with the estimation of the actions (see Fig.1).
 
 b) Peak reduction problem: In the special case of constant price, for electricity generation and consumption, with λ+t = λ-t , the cost minimization problem becomes a peak reduction problem, defined as
 
-![alt text](https://raw.githubusercontent.com/amirashoori7/energy-market-RL/raw/main/fig/Cost Min.jpg)
+![alt text](https://github.com/amirashoori7/energy-market-RL/blob/df27ee8752bdb8909e87d5a35fdf0ca149386486/fig/Cost%20Min.jpg)
 
 
 ## Background: 
@@ -51,7 +51,7 @@ A. Reinforcement Learning
 In a Reinforcement Learning (RL) context, an agent learns to act using a (Partial Observable) Markov Decision Process (MDP) formalism. 
 MDPs are defined by a 4-tuple
 
-![alt text](https://github.com/amirashoori7/energy-market-RL/raw/main/fig/ "MDP formalism")
+![alt text](https://github.com/amirashoori7/energy-market-RL/blob/8fca5c2360c83735a3c3e7944a323eb6f8ca00cb/fig/MDP.jpg)
 
 The theory of RL is founded on two important principles: Bellman's equation and the theory of stochastic approximation.
 
