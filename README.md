@@ -64,6 +64,14 @@ B. Deep Neural Networks
 ......................................................
 ......................................................
 
+## PROPOSED METHOD
+In this research we propose the use of Deep Reinforcement Learning (DRL) as an on-line method to perform optimal building resource allocation at different levels of aggregation.
+The general architecture of our proposed method is depicted in the followiing Fig. 
+
+![alt text](https://github.com/amirashoori7/energy-market-RL/blob/69454a57c2a05e3632893dfc09bcdae3138fbf31/fig/Energy%20Market%20DRL%20Arch.jpg)
+
+DRL (RL combined with DNNs of k hidden layers) can learn to act better than the standard RL by automatically extracting patterns, such as those of electricity consumption.
+Overall, we can represent the DNN method, from a very general perspective, as a black box model with good generalization capabilities over a given input distribution as follows:
 
 ## Implementation Milestones
 
