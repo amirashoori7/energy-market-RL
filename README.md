@@ -72,7 +72,7 @@ The general architecture of our proposed method is depicted in the following Fig
 
 DRL (RL combined with DNNs of k hidden layers) can learn to act better than the standard RL by automatically extracting patterns, such as those of electricity consumption.
 
-### Learning in DRL is done as follows: 
+Learning in DRL is done as follows: 
 The DNN is trained with a variant of the Q-learning algorithm, using stochastic gradient descent to update its parameters. 
 Firstly, the value-function from the standard RL algorithm is replaced by a deep Q-network with parameters θ, given by the weights and biases of DNN, such that Q(s, a, θ) ≈ Q π (s, a). 
 This approximation is used further to define the objective function by mean-squared error in Q-values
