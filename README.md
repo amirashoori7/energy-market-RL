@@ -1,5 +1,6 @@
-## energy-market-machine-learning
+## Overview
 A researche study on the problem of Energy Market's Demand Side Management (DSM) using Reinforcement Learning techniques.
+Local energy markets (LEMs) are targeted towards establishing a balance between the local generation and consumption which may facilitate a reduction in energy transmission, network congestion and expedite proper inclusion of decentralised RES (Mengelkamp et al. 2018a).
 
 ### Goals
 Here we try to to optimize building energy consumption by understanding individual consumption behaviors based on the extensive data collected from the Advanced Metering Infrastructure (AMI).
