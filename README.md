@@ -79,8 +79,10 @@ Firstly, the value-function from the standard RL algorithm is replaced by a deep
 This approximation is used further to define the objective function by mean-squared error in Q-values
 
 
-### Implementation Milestones
+## Implementation Milestones
+
 To train the DQN and DPG models as a starting point an off-line database: 
+
 1- we should build the environment game
 2- for the assumed flexible loads, possibilities should be considered and evaluated
 (We gave a positive reward if estimation was close to our optimization goal. If not, we assigned to that possibility a negative reward.) 
