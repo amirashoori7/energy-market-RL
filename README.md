@@ -23,6 +23,7 @@ context of smart grid - smart building, as following:
 • We propose a new way to adapt DRL algorithms to the smart grid context, with the aim of conceiving a fast algorithm to learn the electrical patterns and to optimize on-line either the building energy consumption or the cost.
 
 • We investigate two DRL algorithms, namely Deep Q-learning (DQN) and Deep Policy Gradient (DPG).
+
 • DPG in its current state-of-the-art form is capable to take just one action at a specific time. As in the building
 context multiple actions have to be taken at the same moment, we propose a novel gradient method to enhance DPG with the capability of handling multiple actions simultaneously.
 
