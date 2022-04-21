@@ -1,13 +1,14 @@
-# energy-market-machine-learning
+## Overview
 A researche study on the problem of Energy Market's Demand Side Management (DSM) using Reinforcement Learning techniques.
+Local energy markets (LEMs) are targeted towards establishing a balance between the local generation and consumption which may facilitate a reduction in energy transmission, network congestion and expedite proper inclusion of decentralised RES (Mengelkamp et al. 2018a).
 
-## Goals
+### Goals
 Here we try to to optimize building energy consumption by understanding individual consumption behaviors based on the extensive data collected from the Advanced Metering Infrastructure (AMI).
 
 This work is motivated by the hypothesis that an optimal resource allocation of end-user patterns based on daily smart electrical device profiles could be used to smoothly reconcile differences in future energy consumption patterns and the supply of variable sources such as wind and solar. 
 It is expected that a cost minimization problem could be solved to activate real-time price responsive behavior
 
-## Approach
+### Approach
 Our objectives can be done by performing successive transformation of the historical data to learn powerful machine learning models to cope with the high uncertainty of the electrical patterns. Moreover, these models will be capable of generalization and they could be exploited in an on-line manner (i.e. few milliseconds) to minimize the cost or the energy consumption in newly encountered situations.
 
 The building environment is modeled using a Markov Decision Process and it can be used to find the best long-term strategies. 
@@ -24,7 +25,7 @@ context multiple actions have to be taken at the same moment, we propose a novel
 
 We evaluate our proposed methods on the PecanStreet database at both the building and aggregated level. In the end, we prove that our proposed methods are able to efficiently cope with the inherent uncertainty and variability in the generation of energy. 
 
-## Problem Formulation
+### Problem Formulation
 In this context, we aim to reduce load peaks as well as to minimize the cost of energy. 
 
 Let B denote the set of buildings, such that B i ∈ B, ∀i ∈ N representing the index of the building analyzed. 
@@ -45,7 +46,7 @@ b) Peak reduction problem: In the special case of constant price, for electricit
 ![alt text](https://github.com/amirashoori7/energy-market-RL/blob/df27ee8752bdb8909e87d5a35fdf0ca149386486/fig/Cost%20Min.jpg)
 
 
-## Background: 
+### Background: 
 
 A. Reinforcement Learning
 In a Reinforcement Learning (RL) context, an agent learns to act using a (Partial Observable) Markov Decision Process (MDP) formalism. 
@@ -64,7 +65,7 @@ B. Deep Neural Networks
 ......................................................
 ......................................................
 
-## PROPOSED METHOD
+### PROPOSED METHOD
 In this research we propose the use of Deep Reinforcement Learning (DRL) as an on-line method to perform optimal building resource allocation at different levels of aggregation.
 The general architecture of our proposed method is depicted in the following Fig:
 
@@ -72,13 +73,13 @@ The general architecture of our proposed method is depicted in the following Fig
 
 DRL (RL combined with DNNs of k hidden layers) can learn to act better than the standard RL by automatically extracting patterns, such as those of electricity consumption.
 
-### Learning in DRL is done as follows: 
+Learning in DRL is done as follows: 
 The DNN is trained with a variant of the Q-learning algorithm, using stochastic gradient descent to update its parameters. 
 Firstly, the value-function from the standard RL algorithm is replaced by a deep Q-network with parameters θ, given by the weights and biases of DNN, such that Q(s, a, θ) ≈ Q π (s, a). 
 This approximation is used further to define the objective function by mean-squared error in Q-values
 
 
-## Implementation Milestones
+### Implementation Milestones
 To train the DQN and DPG models as a starting point an off-line database: 
 1- we should build the environment game
 2- for the assumed flexible loads, possibilities should be considered and evaluated
