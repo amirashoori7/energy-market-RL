@@ -84,14 +84,20 @@ This approximation is used further to define the objective function by mean-squa
 To train the DQN and DPG models as a starting point an off-line database: 
 
 1- we should build the environment game
+
 2- for the assumed flexible loads, possibilities should be considered and evaluated
 (We gave a positive reward if estimation was close to our optimization goal. If not, we assigned to that possibility a negative reward.) 
-At the begin of the learning there are a lot of random choices, but in time (many iterations), the reinforcement learning model converges and will learn to choose just the possibilities which are close to the optimization goal. 
+At the begin of the learning there are a lot of random choices, but in time (many iterations), the reinforcement learning model converges and will learn to choose just the possibilities which are close to the optimization goal
+
 3- for DQN we must define possible actions on flexible devices, like switching off air conditioner, washing machines and so on
+
 4- setting hyper-parameters of all experiments like learning rate α = 10 −2 , the discount factor to γ = 0.99, and η = 0.01
+
 5- then we must train our models for x episodes where an episode is composed by y random chosen days. 
 Also weights should be updated, for example after every 2 episodes
+
 6- Reward function should be computed at the 
+
 Finally, we obtain an alternative optimized version of the starting off-line database, which would be better if this strategy would have been used in reality.
 
 
