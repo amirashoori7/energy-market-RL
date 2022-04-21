@@ -53,6 +53,7 @@ b) Peak reduction problem: In the special case of constant price, for electricit
 ### Background: 
 
 A. Reinforcement Learning
+
 In a Reinforcement Learning (RL) context, an agent learns to act using a (Partial Observable) Markov Decision Process (MDP) formalism. 
 MDPs are defined by a 4-tuple
 
