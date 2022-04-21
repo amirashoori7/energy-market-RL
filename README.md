@@ -17,8 +17,11 @@ Prior studies showed that RL methods are able to solve stochastic optimal contro
 
 In this research, we propose the use of the Deep Policy Gradient method, as part of Deep Reinforcement Learning algorithms, in the large-scale physical
 context of smart grid - smart building, as following:
+
 • We propose for an approach to optimize directly on-line the building energy consumption and the cost.
+
 • We propose a new way to adapt DRL algorithms to the smart grid context, with the aim of conceiving a fast algorithm to learn the electrical patterns and to optimize on-line either the building energy consumption or the cost.
+
 • We investigate two DRL algorithms, namely Deep Q-learning (DQN) and Deep Policy Gradient (DPG).
 • DPG in its current state-of-the-art form is capable to take just one action at a specific time. As in the building
 context multiple actions have to be taken at the same moment, we propose a novel gradient method to enhance DPG with the capability of handling multiple actions simultaneously.
